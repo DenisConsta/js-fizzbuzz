@@ -1,0 +1,65 @@
+
+:root{
+  --gradient: linear-gradient(
+    270deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+    );
+}
+
+
+body>.container-fluid{
+  min-height: 100vh;
+}
+
+.bg-gradient{
+  background-image: var(--gradient) !important;
+  background-size: 300%;
+  animation: bg-animation 3s infinite alternate;
+}
+
+@keyframes bg-animation{
+  from{background-position: left;}
+  to{background-position: right;}
+}
+
+.my-container{
+  max-width: 705px;
+  margin: 20px auto;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight : 600;
+  width: 80px;
+  aspect-ratio: 1/1;
+  margin: 10px;
+  background-color: #1389B2;
+}
+
+.fizz{
+  background-color: #0CD6A1;
+}
+
+.buzz{
+  background-color: #FFD166;  
+}
+
+.fizzbuzz{
+  background-color: #F0466F;
+}
+
+h1{
+  color: white;
+
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+ 
+}
