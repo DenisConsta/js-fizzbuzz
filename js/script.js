@@ -3,11 +3,13 @@ const limit = 100;
 
 for(let i=1; i<=limit; i++){
   
+  // generazione del box
   const box = document.createElement('div');
   box.className = "box";
   box.innerHTML = i;
   container.append(box);
 
+  // controlli di divisbilità
   if(DivisibleBy(i, 3)){
     box.classList.add("fizz");
     box.innerHTML = "fizz";
@@ -26,6 +28,5 @@ for(let i=1; i<=limit; i++){
 function DivisibleBy(num, div){
   if(!(num % div))
     return true;
-  else
-    return false;
+  return false;
 }
