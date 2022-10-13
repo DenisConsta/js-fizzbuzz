@@ -42,18 +42,45 @@ body>.container-fluid{
   aspect-ratio: 1/1;
   margin: 10px;
   background-color: #1389B2;
+  transition: .3s;
+  position: relative;
+}
+
+.box:hover{
+  transform: scale(1.3)
 }
 
 .fizz{
   background-color: #0CD6A1;
 }
 
+.fizz:hover::after{
+  content: "Divisibile per 3";
+  font-size: .6rem;
+  position: absolute;
+  bottom: 0;
+}
+
 .buzz{
   background-color: #FFD166;  
 }
 
+.buzz:hover::after{
+  content: "Divisibile per 5";
+  font-size: .6rem;
+  position: absolute;
+  bottom: 0;
+}
+
 .fizzbuzz{
   background-color: #F0466F;
+}
+
+.fizzbuzz:hover::after{
+  content: "Divisibile per 3 e 5";
+  font-size: .55rem;
+  position: absolute;
+  bottom: 0;
 }
 
 h1{

@@ -22,6 +22,7 @@ for(let i=1; i<=limit; i++){
   }
 }
 
+// funzione per stabilire se il valore è divisibile per un altro numero
 function DivisibleBy(num, div){
   if(!(num % div))
     return true;
